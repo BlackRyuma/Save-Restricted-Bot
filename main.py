@@ -116,7 +116,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 					continue
 				except pyrogram.errors.exceptions.TelegramError as e:
 	                                bot.send_message(message.chat.id,f"**Caught a TelegramErrorException** : __{e}__", reply_to_message_id=message.id)
-					continue
+				continue
 				
 	
 				# try: handle_private(message,chatid,msgid)
